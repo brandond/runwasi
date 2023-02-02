@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -ex
+
+env
+
+zypper remove -y container-suseconnect
+zypper install -y -t pattern devel_basis
+
+make
